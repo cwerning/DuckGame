@@ -11,7 +11,7 @@
 public class StartUp {
     
     public static void main(String[] args) {
-        Duck mallard = new MallardDuck();
+        /*Duck mallard = new MallardDuck();
         mallard.performQuack();
         mallard.performFly();
         
@@ -21,7 +21,13 @@ public class StartUp {
         
         Duck rubberDuck = new RubberDuck();
         rubberDuck.performQuack();
-        rubberDuck.performFly();
+        rubberDuck.performFly();*/
+        
+        Duck modelDuck = new ModelDuck();
+        modelDuck.display();
+        modelDuck.performFly();
+        modelDuck.setFlyBehavior(new FlyRocketPowered());
+        modelDuck.performFly();
     }
     
 }
